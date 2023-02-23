@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUDS</title>
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    
+<div class="container py-2 text-white-50 text-bg-dark"><h2>Bookmarker</h2></div>
+
+<div class="container line py-2"></div>
+
+<div class="container input py-1 text-center">
+
+<h2 class="my-4">Bookmark your favorite sites</h2>
+
+
+<div class="form-control">
+
+
+<label for="siteName"><h3 class="">Site Name</h3></label>
+<input type="text" class="w-100" id="siteName">
+<br>
+
+<label for="siteUrl"><h3 class="">Site URL</h3></label>
+<input type="text" class="w-100" id="siteUrl">
+
+<button  id="addBtn" onclick="addSite()" class="btn btn-success my-4 ">Submit</button>
+
+</div>
+
+
+</div>
+
+<div class="container">
+
+<table class=" table my-5 text-center ">
+
+
+<thead class="tableHead bg-dark-subtle">
+
+<th class="head">Id</th>
+<th class="head">Name</th>
+<th class="head"> Url</th>
+<th class="head">Visit</th>
+<th class="head">Delete  </th>
+</thead>
+
+<tbody id="tableBody">
+
+<!-- <tr>
+
+<td class="td" style="width: 10%";>qqq</td>
+<td class="td">qqq</td>
+<td class="td">"qqq</td>
+<td class="td"><button class="btn btn-info w-50">Go</button></td>
+<td class="td"><button class="btn btn-danger w-50">Delete</button></td>
+
+</tr> -->
+
+</tableBody>
+
+</table>
+
+</div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+
+  </body>
+</html>
